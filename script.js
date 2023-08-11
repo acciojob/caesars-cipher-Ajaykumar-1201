@@ -37,8 +37,8 @@ function rot13(encodedStr) {
 	let arr = encodedStr.split(" ");
 	for(i = 0; i < arr.length; i++) {
 		let a = "";
-		for(let j = 0; j < arr[i].length; i++) {
-			a += lookup.arr[i][j];
+		for(let j = 0; j < arr[i].length; j++) {
+			a += lookup[arr[i][j]];
 		}
 		decodedArr[i] = a;
 	}
