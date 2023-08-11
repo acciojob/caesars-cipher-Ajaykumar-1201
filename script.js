@@ -40,7 +40,11 @@ function rot13(encodedStr) {
 		for(let j = 0; j < arr[i].length; j++) {
 			a += lookup[arr[i][j]];
 		}
-		decodedArr += a + " ";
+		decodedArr += a
+		if (i < arr.length - 1) {
+			decodedArr += " ";
+		}
+		
 	}
 	
 
