@@ -32,7 +32,7 @@ const lookup = {
 };
 
 function rot13(encodedStr) {
-  let decodedArr = []; // Your Result goes here
+  let decodedArr = ""; // Your Result goes here
   // Only change code below this line
 	let arr = encodedStr.split(" ");
 	for(let i = 0; i < arr.length; i++) {
@@ -40,7 +40,7 @@ function rot13(encodedStr) {
 		for(let j = 0; j < arr[i].length; j++) {
 			a += lookup[arr[i][j]];
 		}
-		decodedArr[i] = a;
+		decodedArr += a + " ";
 	}
 	
 
